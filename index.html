@@ -1,60 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Work Day Scheduler</title>
-  </head>
 
-  <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-    </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
-      
-      <!-- Time of day section -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Work Day Scheduler</title>
+</head>
 
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+  <div class="container">
+    <!-- Timeblocks go here -->
+
+    <!-- Time of day section -->
+    <!-- 9am -->
     <form class="form-inline">
-      <div class="col-12 col-md-3 col-lg-2">
-      <div class="card border-light">
-      <div id="currentHour" class="card-header">9 AM</div>      
-      </div>      
-      </div>      
-      <!-- Task input section -->
-      <div class="col-12 col-md-6 col-lg-8">
-      <div class="input-group">
-      <div class="input-group-prepend"></div>      
-      <input type="text" class="form-control" id="inlineFormInputGroupUsername2">
+      <div class="card border-light col-12 col-md-3 col-lg-2">
+        <div data-time="9" id="currentHour" class="card-header">9 AM</div>
       </div>
+      <!-- Task input section -->
+      <div class="input-group col-12 col-md-6 col-lg-8">
+        <input type="text" class="form-control" id="inlineFormInputGroupUsername2">
       </div>
       <!-- Submit button section -->
       <div class="col-12 col-md-3 col-lg-2">
-      <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i></button>
+        <button type="button" class="btn btn-primary "><i class="fa fa-save"></i></button>
       </div>
     </form>
-    </div>
+    <!-- 10am -->
+    <form class="form-inline">
+      <div class="card border-light col-12 col-md-3 col-lg-2">
+        <div data-time="10" id="currentHour" class="card-header">10 AM</div>
+      </div>
+      <!-- Task input section -->
+      <div class="input-group col-12 col-md-6 col-lg-8">
+        <input type="text" class="form-control" id="inlineFormInputGroupUsername2">
+      </div>
+      <!-- Submit button section -->
+      <div class="col-12 col-md-3 col-lg-2">
+        <button type="button" class="btn btn-primary "><i class="fa fa-save"></i></button>
+      </div>
+    </form>
+    <!-- 11am -->
+    <form class="form-inline">
+      <div class="card border-light col-12 col-md-3 col-lg-2">
+        <div data-time="11" id="currentHour" class="card-header">11 AM</div>
+      </div>
+      <!-- Task input section -->
+      <div class="input-group col-12 col-md-6 col-lg-8">
+        <input type="text" class="form-control" id="inlineFormInputGroupUsername2">
+      </div>
+      <!-- Submit button section -->
+      <div class="col-12 col-md-3 col-lg-2">
+        <button type="button" class="btn btn-primary "><i class="fa fa-save"></i></button>
+      </div>
+    </form>
+    <!-- 12pm -->
+    <form class="form-inline">
+      <div class="card border-light col-12 col-md-3 col-lg-2">
+        <div data-time="12" id="currentHour" class="card-header">12 AM</div>
+      </div>
+      <!-- Task input section -->
+      <div class="input-group col-12 col-md-6 col-lg-8">
+        <input type="text" class="form-control" id="inlineFormInputGroupUsername2">
+      </div>
+      <!-- Submit button section -->
+      <div class="col-12 col-md-3 col-lg-2">
+        <button type="button" class="btn btn-primary "><i class="fa fa-save"></i></button>
+      </div>
+    </form>
+    <!-- 1pm -->
+    <form class="form-inline">
+      <div class="card border-light col-12 col-md-3 col-lg-2">
+        <div data-time="13" id="currentHour" class="card-header">1 PM</div>
+      </div>
+      <!-- Task input section -->
+      <div class="input-group col-12 col-md-6 col-lg-8">
+        <input type="text" class="form-control" id="inlineFormInputGroupUsername2">
+      </div>
+      <!-- Submit button section -->
+      <div class="col-12 col-md-3 col-lg-2">
+        <button type="button" class="btn btn-primary "><i class="fa fa-save"></i></button>
+      </div>
+    </form>
+    <!-- 2pm -->
+    <form class="form-inline">
+      <div class="card border-light col-12 col-md-3 col-lg-2">
+        <div data-time="14" id="currentHour" class="card-header">2 PM</div>
+      </div>
+      <!-- Task input section -->
+      <div class="input-group col-12 col-md-6 col-lg-8">
+        <input type="text" class="form-control" id="inlineFormInputGroupUsername2">
+      </div>
+      <!-- Submit button section -->
+      <div class="col-12 col-md-3 col-lg-2">
+        <button type="button" class="btn btn-primary "><i class="fa fa-save"></i></button>
+      </div>
+    </form>
+    <!-- 3pm -->
+    <form class="form-inline">
+      <div class="card border-light col-12 col-md-3 col-lg-2">
+        <div data-time="15" id="currentHour" class="card-header">3 PM</div>
+      </div>
+      <!-- Task input section -->
+      <div class="input-group col-12 col-md-6 col-lg-8">
+        <input type="text" class="form-control" id="inlineFormInputGroupUsername2">
+      </div>
+      <!-- Submit button section -->
+      <div class="col-12 col-md-3 col-lg-2">
+        <button type="button" class="btn btn-primary "><i class="fa fa-save"></i></button>
+      </div>
+    </form>
+    <!-- 4pm -->
+    <form class="form-inline">
+      <div class="card border-light col-12 col-md-3 col-lg-2">
+        <div data-time="16" id="currentHour" class="card-header">4 PM</div>
+      </div>
+      <!-- Task input section -->
+      <div class="input-group col-12 col-md-6 col-lg-8">
+        <input type="text" class="form-control" id="inlineFormInputGroupUsername2">
+      </div>
+      <!-- Submit button section -->
+      <div class="col-12 col-md-3 col-lg-2">
+        <button type="button" class="btn btn-primary "><i class="fa fa-save"></i></button>
+      </div>
+    </form>
+    <!-- 5pm -->
+    <form class="form-inline">
+      <div class="card border-light col-12 col-md-3 col-lg-2">
+        <div data-time="17" id="currentHour" class="card-header">5 PM</div>
+      </div>
+      <!-- Task input section -->
+      <div class="input-group col-12 col-md-6 col-lg-8">
+        <input type="text" class="form-control" id="inlineFormInputGroupUsername2">
+      </div>
+      <!-- Submit button section -->
+      <div class="col-12 col-md-3 col-lg-2">
+        <button type="button" class="btn btn-primary "><i class="fa fa-save"></i></button>
+      </div>
+    </form>
+  </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="./assets/js/script.js"></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
 </html>
