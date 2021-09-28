@@ -2,8 +2,8 @@ let timeblockEl = document.querySelector('#currentHour');
 
 // Time Section
 let today = moment();
-
 $("#currentDay").text(today.format('MMM Do, YYYY'));
+
 let currentTime = today.hours()
 
 
